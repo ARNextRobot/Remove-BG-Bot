@@ -23,28 +23,26 @@ FayasNoushad = Client(
 START_TEXT = """
 Hello {}, I am a photo background remover bot. Send me a photo I will send the photo without background.
 
-Made by @FayasNoushad
+**Developed with ❤️ by @SarahMaiaOff**
 """
 HELP_TEXT = """
 - Just send me a photo
 - I will download it
 - I will send the photo without background
 
-Made by @FayasNoushad
+**Developed with ❤️ by @SarahMaiaOff**
 """
 ABOUT_TEXT = """
 - **Bot :** `Backround Remover Bot`
-- **Creator :** [Fayas](https://telegram.me/TheFayas)
-- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
-- **Source :** [Click here](https://github.com/FayasNoushad/Remove-BG-Bot/tree/main)
-- **Language :** [Python3](https://python.org)
-- **Library :** [Pyrogram](https://pyrogram.org)
-- **Server :** [Heroku](https://heroku.com)
+- **Creator:** [Sarah Maia](https://telegram.me/SarahMaiaOff)
+- **Channel:** [Fayas Noushad](https://telegram.me/ARNextRobot)
+- **Support Group:** [ARNext Robot Group](https://t.me/ARNextRobotGroup)
+- **Water Mark Bot:** [Python3](https://t.me/WaterMarkNextBot)
 """
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-        InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+        InlineKeyboardButton('Channel', url='https://telegram.me/ARNextRobot'),
+        InlineKeyboardButton('Feedback', url='https://telegram.me/ARNextRobotContact')
         ],[
         InlineKeyboardButton('Help', callback_data='help'),
         InlineKeyboardButton('About', callback_data='about'),
@@ -107,7 +105,7 @@ async def start(bot, update):
 async def remove_background(bot, update):
     if not API:
         await update.reply_text(
-            text="Error :- Remove BG Api is error",
+            text="Error :- Api is error",
             disable_web_page_preview=True
         )
         return
